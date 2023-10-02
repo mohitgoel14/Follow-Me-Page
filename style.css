@@ -123,4 +123,7 @@ a:hover {
     height: auto;
     display: block;
   }
+  #card{
+    margin: 10px;
+  }
 }
