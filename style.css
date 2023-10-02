@@ -3,8 +3,8 @@ html {
   color: white;
   font-family: "Mooli", sans-serif;
   font-size: 16px;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 *,
 *:before,
@@ -28,7 +28,37 @@ body {
 #top-section {
   height: 45%;
   padding: 30px;
+  margin: 0px;
   background-color: #7fffd451;
+}
+
+#bottom-section {
+  height: 55%;
+  margin: 0px;
+  /* display: flex; */
+}
+#bottom-left {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+  background-color: #68e8e2;
+}
+#bottom-right {
+  width: 50%;
+  margin: 0px;
+  height: 100%;
+  padding: 30px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #66ccaa;
+}
+
+#bottom-left h2,
+#bottom-right h2 {
+  font-size: 2rem;
 }
 #top-section h2 {
   color: #66ccaa;
@@ -45,27 +75,8 @@ body {
 #top-section p {
   color: darkgray;
   padding: 10px;
+  margin: 0%;
   font-size: 1.5rem;
-}
-#bottom-section {
-  height: 55%;
-  display: flex;
-}
-#bottom-right {
-  width: 50%;
-  height: 100%;
-  padding: 30px;
-  background-color: #66ccaa;
-}
-#bottom-left {
-  width: 50%;
-  height: 100%;
-  padding: 30px;
-  background-color: #68e8e2;
-}
-#bottom-left h2,
-#bottom-right h2 {
-  font-size: 2rem;
 }
 ul {
   padding: 0%;
@@ -103,4 +114,13 @@ a:hover {
   color: black;
   text-decoration: dotted;
   font-size: 1.75rem;
+}
+@media (max-width: 650px) {
+  #bottom-left,
+  #bottom-right,
+  #card {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
