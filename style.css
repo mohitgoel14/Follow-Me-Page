@@ -15,8 +15,8 @@ body {
   background-color: antiquewhite;
 }
 #card {
-  width: 70vw;
-  height: 90vh;
+  width: 900px;
+  height: 700px;
   margin: auto;
   margin-top: 40px;
   -webkit-box-shadow: 6px 3px 40px -1px rgba(0, 0, 0, 0.77);
@@ -115,15 +115,24 @@ a:hover {
   text-decoration: dotted;
   font-size: 1.75rem;
 }
-@media (max-width: 650px) {
+/* @media (max-height: 650px){
+  #card{
+    height: 100%;
+    display: flex;
+  }
+} */
+@media (max-width: 850px) {
   #bottom-left,
-  #bottom-right,
-  #card {
+  #bottom-right {
     width: 100%;
     height: auto;
     display: block;
+    margin: auto;
   }
   #card{
-    margin: 10px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
